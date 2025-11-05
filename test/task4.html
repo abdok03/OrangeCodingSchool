@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fill in your information</title>
+</head>
+<body>
+  <h1>Fill in your information</h1>
+
+  <form action="#" method="post" enctype="multipart/form-data" novalidate>
+    <fieldset>
+      <legend>Form</legend>
+
+      <div>
+        <label for="firstname">First name:</label><br>
+        <input id="firstname" name="firstname" type="text">
+      </div>
+
+      <div>
+        <label for="lastname">Last name:</label><br>
+        <input id="lastname" name="lastname" type="text">
+      </div>
+
+      <div>
+        <label for="email">Email:</label><br>
+        <input id="email" name="email" type="email">
+      </div>
+
+      <fieldset>
+        <legend>Your Gender</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favorite Subjects</legend>
+        <input type="checkbox" id="cpp" name="subjects" value="c++">
+        <label for="cpp">C++</label>
+
+        <input type="checkbox" id="java" name="subjects" value="java">
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="csharp" name="subjects" value="c#">
+        <label for="csharp">C#</label>
+
+        <input type="checkbox" id="php" name="subjects" value="php">
+        <label for="php">PHP</label>
+
+        <input type="checkbox" id="sql" name="subjects" value="sql">
+        <label for="sql">SQL</label>
+      </fieldset>
+
+      <div>
+        <label for="city">Your City</label><br>
+        <select id="city" name="city">
+          <option value="irbid">Irbid</option>
+          <option value="amman">Amman</option>
+          <option value="zarqa">Zarqa</option>
+          <option value="aqaba">Aqaba</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="avatar">Upload Image:</label><br>
+        <input id="avatar" type="file" name="avatar" accept="image/*">
+      </div>
+
+      <div>
+        <label for="about">Write About yourself:</label><br>
+        <textarea id="about" name="about" rows="5" cols="40" placeholder="Write Here"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
